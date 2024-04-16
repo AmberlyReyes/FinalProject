@@ -5,9 +5,10 @@ public class Edge {
 	
     private Location startLocation;
     private Location endLocation;
-    private double weight;
+    private float weight;
 
-    public Edge(Location start, Location end, double weight) {
+    public Edge(Location start, Location end, float weight) {
+    	super();
         this.startLocation = start;
         this.endLocation = end;
         this.weight = weight;
@@ -25,7 +26,7 @@ public class Edge {
         return weight;
     }
 
-    public void setWeight(double weight) {
+    public void setWeight(float weight) {
         this.weight = weight;
     }
     
